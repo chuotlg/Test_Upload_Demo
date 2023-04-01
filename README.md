@@ -31,7 +31,8 @@ NB Unlike the Java equivalent, there is no Common Steps files containing step de
 ### Running tests
 Please ensure install and config all Env before running (for each installation and config, please go to their homepages and follow instructions based on your Env (Win, Linux, MAC...))
 
-The tests are easy to run as the project uses Pycharm and Behave BDD, so running the tests is as simple as running pycharm.
+The tests are easy to run as the project uses Pycharm with Behave BDD, so running the tests is simple to run `upload_file.feature` using behave cmd (e.g: behave .\features\upload_file.feature)
+)
 
 Each test opens up in a separate browser instance (which is closed at the end of the test) so is not the fastest way to run a test suite, but it is the right way as we should ensure that tests are wholly independent of one another, do not share state and can run in any order.
 

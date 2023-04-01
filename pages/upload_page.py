@@ -1,13 +1,9 @@
-import self as self
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from abc import ABC, abstractmethod
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from pages.base import BasePage
 
 
 class Upload(BasePage):
+    # define the locators of all elements using for this page here
     submit_file_btn = (By.ID, 'submitbutton')
     choose_file_btn = (By.NAME, 'uploadfile_0')
     terms_chkbox = (By.NAME, 'uploadfile_0')

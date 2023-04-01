@@ -4,7 +4,7 @@ Feature: Upload File
         Given I launch the chrome browser
         When I open the 'upload file' page
         And I select a valid file to upload
-        # And I accept the terms
+        And I accept the terms
         And I click on Submit btn
-        # Then a successful msg for uploading the file is displayed
-        Then close browser
+        Then a successful msg for uploading the file is displayed
+        And close browser

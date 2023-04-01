@@ -1,5 +1,5 @@
 
-### Overview
+## Overview
 This proj provides an example for testing "Upload feature" with Selenium WebDriver, written in Python, using the POM design pattern and driven via BDD feature files through Pycharm. It can be used to kickstart testing of other UIs with minimal changes to the project. As I don't have the requirements of this demo page so I only write 1 sample scenario with my assumptions and show the test fw that is using, some abstracts items are the placeholders for later extensions
 
 Notice that this is not a complete implementation of a Selenium test suite for the target UI. It is an example of how to structure a Selenium test suite in Python but only a subset of the possible tests have been added.
@@ -36,10 +36,10 @@ The tests are easy to run as the project uses Pycharm and Behave BDD, so running
 Each test opens up in a separate browser instance (which is closed at the end of the test) so is not the fastest way to run a test suite, but it is the right way as we should ensure that tests are wholly independent of one another, do not share state and can run in any order.
 
 
-#### Test Reports
+### Test Reports
 A report is generated for each test run is using Allure report. This is a simple report showing a list of the steps classes (each linked to a feature file) that have been executed and the overall result. In the event of a failing scenario, the details of the failure (actual versus expected result) are shown to allow easy debugging.
 
-#### Development plan
+### Development plan
 Testsuite running: define and run testsuite (e.g: add `BeforeAll` and `AfterAll` hook to control the start and end of each testsuite running.)
 
 Desired capabilities: define the capabilities for each Env support and running on web (Chrome, FF, Edge...) and mobile (Android, iOS).

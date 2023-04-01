@@ -34,7 +34,25 @@ Please ensure install and config all Env before running (for each installation a
 The tests are easy to run as the project uses Pycharm and Behave BDD, so running the tests is as simple as running pycharm.
 
 Each test opens up in a separate browser instance (which is closed at the end of the test) so is not the fastest way to run a test suite, but it is the right way as we should ensure that tests are wholly independent of one another, do not share state and can run in any order.
-For testsuite running, we will add `BeforeAll` and `AfterAll` hook to control the start and end of each testsuite running
+
 
 #### Test Reports
 A report is generated for each test run is using Allure report. This is a simple report showing a list of the steps classes (each linked to a feature file) that have been executed and the overall result. In the event of a failing scenario, the details of the failure (actual versus expected result) are shown to allow easy debugging.
+
+#### Development plan
+Testsuite running: define and run testsuite (e.g: add `BeforeAll` and `AfterAll` hook to control the start and end of each testsuite running.)
+
+Desired capabilities: define the capabilities for each Env support and running on web (Chrome, FF, Edge...) and mobile (Android, iOS).
+
+Report improvement: Based on proj needs, define more info and steps if needed.
+
+CI/CD integration: based on the result of CI/CD plan (mentioned in Test plan), integrate the tests to CI/CD pipeline of DevOps team so whenever new build comes will trigger the related tests.
+
+Other integrations:
+* Grafana: for Dashboard 
+* Jira: for bugs/user story linking
+* ...
+
+Other items based on proj target and team capabilities.
+
+
